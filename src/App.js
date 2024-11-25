@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+//1.install dependencies Done
+//2.inport dependencies Done
+//3.setup webcam canvas
+//4.define references to those 
+//5. load handpose
+//6.Detect Function
+//7.Drawing utilities from tensorflow
+//Draw functions 
+
+
+
+//import logo from './logo.svg';
+import React,{useRef} from 'react';
+import *  as tf from '@tensorflow/tfjs';
+import * as handpose from '@tensorflow-models/handpose';
+
+import Webcam from 'react-webcam';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
     </div>
   );
 }
