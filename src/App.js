@@ -18,9 +18,40 @@ import Webcam from 'react-webcam';
 import './App.css';
 
 function App() {
+  const webcamRef = useRef(null);
+  const canvasRef = useRef(null);
   return (
     <div className="App">
-     
+      <Webcam
+      ref={webcamRef}
+      style={{
+        position:'absolute',
+        marginLeft:'auto',
+        marginRight:'auto',
+        right:0,
+        left:0,
+        textAlign:'center',
+        width:640,
+        height:480,
+        zIndex:9,
+        transform: 'scaleX(-1)' 
+      }}
+      />
+      <canvas
+      ref={canvasRef}
+      style={{
+        position:'absolute',
+        marginLeft:'auto',
+        marginRight:'auto',
+        right:0,
+        left:0,
+        textAlign:'center',
+        width:640,
+        height:480,
+        zIndex:9,
+      }}
+      />
+
     </div>
   );
 }
